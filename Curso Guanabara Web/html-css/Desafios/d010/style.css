@@ -1,0 +1,170 @@
+@charset "UTF-8";
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@font-face {
+    font-family: 'android';
+    src: url(recursos/fontes/idroid.otf) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+}
+a {
+    color: #1f7c00;
+    text-decoration: none;
+}
+a:hover {
+    color: #2db500;
+}
+a::after {
+    content: url('./recursos/imagens/link-simple-break-thin.svg');
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    text-indent: 2px;
+}
+header {
+    width: 100%;
+    height: 155px;
+    background-image: linear-gradient(#78C257, #1f7c00);    
+}
+
+header p {
+    text-align: center;
+    font-size: 1.14em;
+    color: white;
+    text-shadow: 0.5px 0.4px 1px black;
+}
+
+#titulo {
+    text-align: center;
+    letter-spacing: 0px;
+    padding: 20px 0px 30px 0px;
+    font-size: 2em;
+    color: white;
+    font-family: 'Arial Narrow', Arial, sans-serif
+}
+
+nav a{
+    padding: 0px 0px 0px 20px;
+    color: rgb(233, 224, 224);
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+}
+nav a::after {
+    display: none;
+}
+nav {
+    padding: 20px 0px 0px 0px;
+}
+
+main {
+    width: 820px;
+    margin: auto auto 15px auto;
+    background-color: white;
+    border-radius: 5px 5px 10px 10px;
+}
+
+main p {
+    font-size: 1.15em;
+    text-indent: 40px;
+    text-align: justify;
+    word-spacing: 5px;
+    padding: 10px;
+    line-height: 20px;
+}
+
+body {
+    background-color: #79c257b0;
+}
+
+h1, h2{
+    font-family: 'android';
+    padding: 10px;
+    margin-left: 5px;
+    color: #1f7c00;
+}
+
+
+h2{
+    padding: 3px 3px 3px 5px;
+    margin: 7px 7px 7px 17px;
+    background-image: linear-gradient(to right,#79c25760, white);
+}
+main img {
+    display: block;
+    margin: 0px auto 0px auto;
+}
+iframe {
+    display: block;
+    width: 750px;
+    height: 421.875px;
+    margin: auto;
+}
+iframe {
+    background-color: #1f7c00;
+    padding: 35px;
+}
+#extra {
+    margin: 30px;
+    padding: 0px;
+    background-color: #79c25760;
+    border-radius: 10px;
+}
+#extra h3 {
+    background-color: #1f7c00;
+    color: rgb(236, 226, 226);
+    padding: 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+#extra p {
+    padding: 10px;
+}
+#extra ul {
+    display: inline-block;
+    padding: 0px 200px 0px 10px;
+}
+#extra li {
+    display: inline-block;
+}
+
+#extra li .underline {
+    text-decoration: underline;
+}
+
+#extra li::before {
+    content: url('./recursos/imagens/check-fill.svg');
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    margin-right: 2px;
+}
+
+footer p {
+    text-align: center;
+    color: rgba(255, 255, 255, 0.867);
+}
+
+footer {
+    background-color: #1f7c00;
+    padding: 10px;
+}
+
+footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+footer a:hover{
+    color: #40ff00;
+}
+
+footer a::after {
+    content: none;
+}

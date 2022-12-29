@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabalhando com Fontes</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 1em;
+            font-weight: lighter;
+        }
+        /*
+        Medidas absolutas:
+            px, in, cm, mm, pt pc
+        Medidas relativas:
+            em, ex, rem, vw, vh, %
+        Medidas que devem ser usadas: px e em
+        Em geral: 1em = 16px 
+        */
+        /* opções font-weight: 
+            lighter, normal, bold, bolder 
+            e algumas fontes podem receber valores de 100 a 900
+        */
+        h1 {
+            /* font: font-style -> font-weight -> font-size -> font-family */
+            font: italic 600 3em 'Work Sans', sans-serif;
+        }
+        h2 {
+            font: /*posso pular o font-style*/ bold 2em 'Work Sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com Fontes</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum libero quibusdam illo corrupti in cum distinctio maxime! Iste eligendi eum odit omnis corrupti deserunt cum debitis eaque animi, facere perspiciatis.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Qui obcaecati dignissimos reprehenderit neque voluptatum, delectus voluptatem nulla vitae esse, quam magnam a sit minima corrupti harum quae iure. Fugiat, consequuntur! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit numquam perspiciatis eum nihil, voluptatum reiciendis facere voluptate libero similique dolorem ullam esse repudiandae quia adipisci? Sunt labore corporis reprehenderit perspiciatis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore nulla necessitatibus eum a, culpa tempore ipsum tempora excepturi ea pariatur enim laudantium eaque reiciendis veritatis obcaecati quas temporibus minima? Vero.</p>
+    <h2>Subtítulo muito bom</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque consectetur qui est, nostrum a rem obcaecati explicabo, vero magnam, tempore laboriosam eius! Doloremque omnis molestias quam dolorum animi magni expedita? Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam commodi repellendus voluptatibus deserunt nemo eum aliquid delectus sint ducimus reprehenderit esse quisquam soluta nostrum, magni quasi illum, ea odio possimus.
+    </p>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* 
+            #  = id
+            .  = class
+            :  = pseudo-classe
+            :: = pseudo-element
+            >  = children
+        */
+        body {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        a {
+            color: blue;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkblue;
+        }
+
+        a:hover {
+            color: darkgreen;
+            text-decoration: dotted;
+        }
+
+        a:active {
+            color: black;
+        }
+
+        a::after {
+            content: '{link}';
+            color: darkblue;
+        }
+
+        /* 
+        a::before {
+            content:
+            color:
+        } 
+        */
+
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/pdrzan" target="_blank">Meu github</a></li>
+        <li><a href="https://linkedin.com/in/pdrzan" target="_blank">Meu Linkedin</a></li>
+    </ul>
+</body>
+</html>
