@@ -1,0 +1,137 @@
+/* Minha solução */
+
+/* @charset "UTF-8";
+
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf') format('truetype');
+}
+
+
+
+div[wm-flappy] {
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    top: 100px;
+    box-sizing: border-box;
+    height: 500px;
+    width: 800px;
+    background-color: steelblue;
+    z-index: 10;
+}
+
+#flappy-bird {
+    position: relative;
+    height: 8%;
+    left: 372.215px;
+    top: 225px;
+}
+
+div[coluna] {
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    height: 500px;
+    width: 120px;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    left: 800px;
+}
+
+div[basePonta] {
+    width: 120px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+div[basePonta] div[base]{
+    background-image: linear-gradient(to right, green, limegreen);
+    border: 1px solid black;
+    width: 100px;
+    height: 20px;
+    border-bottom: none;
+}
+
+div[basePonta] div[base][inverte] {
+    border-bottom: 1px solid black;
+    border-top: none;
+}
+
+div[basePonta] div[ponta] {
+    background-image: linear-gradient(to right, green, limegreen);
+    width: 120px;
+    height: 20px;
+    border: 1px solid black;
+}
+
+div[contagem] {
+    overflow: visible;
+    font-size: 3.5em;
+    font-family: 'Pixel';
+    position: absolute;
+    left: 730px;
+    top: 0px;
+} */
+
+/* Solução do professor */
+
+* {
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'Pixel';
+    src: url('../fonts/Pixel.ttf');
+}
+[wm-flappy] {
+    position: relative;
+    border: 5px solid dodgerblue;
+    height: 700px;
+    width: 1200px;
+    margin: 15px;
+    background-color: deepskyblue;
+    overflow: hidden;
+}
+.passaro {
+    position: absolute;
+    width: 60px;
+    left: calc(50% - 30px);
+}
+.par-de-barreiras {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.barreira {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barreira .borda {
+    height: 30px;
+    width: 130px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border: 2px solid #000;
+}
+.barreira .corpo {
+    height: 150px;
+    width: 110px;
+    background: linear-gradient(90deg, #639301, #A5E82E);
+    border-left: 2px solid #000;
+    border-right: 2px solid #000;
+}
+.progresso {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-family: Pixel;
+    font-size: 70px;
+    z-index: 100;
+}
